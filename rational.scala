@@ -16,7 +16,7 @@ class Rational( x:Int , y:Int ) {
     def +( r : Rational ) :Rational = new Rational( this.numer * r.denom + r.numer * this.denom  , this.denom * r.denom )
     def neg : Rational = new Rational( -this.numer , this.denom )
     def -( r : Rational ) : Rational = this + r.neg
-    def *( r : Rational ) : Rational = new Rational( this.numer * r.numer , this.deno * r.deno )
+    def *( r : Rational ) : Rational = new Rational( this.numer * r.numer , this.deno * r.denom )
     def /( r : Rational ) : Rational = new Rational( this.numer * r.deno , this.deno * r.numer )
 
     @Override
